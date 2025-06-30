@@ -1,0 +1,34 @@
+{% extends "index.html" %} {% block content %}
+<section>
+  <div class="flex justify-center items-center">
+    <div class="bg-gray-600 my-40 p-5 w-[70%] rounded">
+      {% if questions: %}
+      <h2 class="text-xl text-center mb-4">{{questions.riddle}}</h2>
+      <div class="flex justify-center items-center mt-3">
+        <input
+          id="answer"
+          class="outline-none bg-transparent px-4 py-2 border-1 rounded-sm w-[60%]"
+          type="text"
+          placeholder="Enter Your answer here..."
+        />
+      </div>
+      <div class="mt-5 flex justify-center items-center">
+        <div class="flex col col-2 gap-20">
+          <form action="/get-random-riddle" method="get">
+            <button class="bg-yellow-600 px-6 py-2 rounded">Next</button>
+          </form>
+          <form action="/" method="get">
+            <button class="bg-blue-600 px-6 py-2 rounded">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      {% else %}
+      <h4 class="text-md tracking-tighter text-center">
+        Something went wrong! Try refreshing the page...
+      </h4>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock content %}

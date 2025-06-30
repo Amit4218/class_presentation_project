@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riddle Me | A simple riddle platform</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-black text-white font-mono p-4 font-semibold">
+    <main>
+      <section>
+        <div class="w-full border p-4 rounded-md bg-gray-700">
+          <h1 class="text-3xl text-center">Welcome To Riddle Me</h1>
+          <div class="w-[60%] mx-auto bg-zinc-600 h-1"></div>
+          <p class="tracking-tighter text-center text-sm py-2">
+            A platfrom to solve fun little riddles
+          </p>
+        </div>
+      </section>
+      {% if score %}
+
+      <div class="flex justify-center items-center">
+        <div class="col col-2 my-10 flex-warp">
+          <span class="tracking-tighter text-md">Your Final Score : 5</span>
+          <span class="tracking-tighter text-md"
+            >Total attempted questions: 8</span
+          >
+        </div>
+      </div>
+
+      {% endif %} {% block content %}
+      <section class="flex justify-center items-center mt-10">
+        <form action="/get-random-riddle" method="get">
+          <button id="start-button" class="px-4 py-4 bg-blue-500 rounded-md">
+            Start Riddling
+          </button>
+        </form>
+      </section>
+      {% endblock content %}
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
