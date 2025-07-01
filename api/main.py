@@ -32,5 +32,11 @@ def submit_riddle_route(token):
     return render_template("score.html", score=riddle)
 
 
+@app.route("/get-random-riddle-cli")
+def get_random_riddle_cli():
+    riddle = get_random_riddle()
+    return riddle
+
+
 if __name__ == "__main__":
     app.run(debug=True)
