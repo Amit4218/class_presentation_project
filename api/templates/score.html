@@ -1,0 +1,17 @@
+{% extends "index.html" %} {% block content %} {% if score %}
+<div class="flex justify-center items-center">
+  <div class="my-10 text-center">
+    <p class="tracking-tighter text-md">
+      Your Final Score: <strong>{{ score.correct_answers }}</strong>
+    </p>
+    <p class="tracking-tighter text-md">
+      Total Attempted Questions: <strong>{{ score.total_attempts }}</strong>
+    </p>
+    <div class="mt-10">
+      <a href="/" class="px-4 py-3 bg-gray-700 rounded"
+        >Return to home</a
+      >
+    </div>
+  </div>
+</div>
+{% endif %} {% endblock content %}

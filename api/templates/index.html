@@ -13,22 +13,11 @@
           <h1 class="text-3xl text-center">Welcome To Riddle Me</h1>
           <div class="w-[60%] mx-auto bg-zinc-600 h-1"></div>
           <p class="tracking-tighter text-center text-sm py-2">
-            A platfrom to solve fun little riddles
+            A platform to solve fun little riddles
           </p>
         </div>
       </section>
-      {% if score %}
-
-      <div class="flex justify-center items-center">
-        <div class="col col-2 my-10 flex-warp">
-          <span class="tracking-tighter text-md">Your Final Score : 5</span>
-          <span class="tracking-tighter text-md"
-            >Total attempted questions: 8</span
-          >
-        </div>
-      </div>
-
-      {% endif %} {% block content %}
+      {% block content %}
       <section class="flex justify-center items-center mt-10">
         <form action="/get-random-riddle" method="get">
           <button id="start-button" class="px-4 py-4 bg-blue-500 rounded-md">
@@ -38,6 +27,14 @@
       </section>
       {% endblock content %}
     </main>
+
+    {% if token %}
+    <script>
+      const session_token = "{{ token }}";
+      localStorage.setItem("token", session_token);
+    </script>
+    {% endif %}
+
     <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>
