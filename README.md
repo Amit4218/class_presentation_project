@@ -1,5 +1,7 @@
 # Riddle Me
 
+- Live working url - [RiddleMe] https://infiniteamit.pythonanywhere.com/
+
 ## Overview
 
 Riddle Me is a python-based-game designed to solve fun little riddles, when you are feeling bored. Riddle Me provides both "command-line interface (cli)" and a "web based GUI" to play the game.
@@ -76,7 +78,7 @@ api/
 
 - You can edit the `MongoClient("mongodb://localhost:27017/")` in the db.py file with your own Database if you have a collection of riddles yourself.
 
-- Additionally you can also edit the `"http://localhost:5000/get-random-riddle-cli"` in the riddle-cli/main.py to your own url, if you have your own custom domain that is hosted on the internet, that serves riddles.
+- Additionally you can also edit the `"https://infiniteamit.pythonanywhere.com//get-random-riddle-cli"` in the riddle-cli/main.py to your own url, if you have your own custom domain that is hosted on the internet, that serves riddles.
 
 ## Contributing
 
