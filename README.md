@@ -94,4 +94,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## Support
 
-For questions or support, open an issue on the [GitHub repository](https://github.com/Amit4218/class_presentation_project.git/issues).
+For questions or support, open an issue on the [GitHub repository](https://github.com/Amit4218/class_presentation_project/issues).
