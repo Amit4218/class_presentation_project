@@ -16,7 +16,7 @@ Riddle Me is a python-based-game designed to solve fun little riddles, when you 
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/Amit4218/singtam-class-python.git
+   git clone https://github.com/Amit4218/class_presentation_project.git
    cd singtam-class-python/game/api
    ```
 
@@ -40,7 +40,7 @@ Follow the on-screen instructions to play.
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/Amit4218/singtam-class-python.git
+   git clone https://github.com/Amit4218/class_presentation_project.git
 
    cd singtam-class-python/game/riddle-cli
    ```
@@ -94,4 +94,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## Support
 
-For questions or support, open an issue on the [GitHub repository](https://github.com/Amit4218/singtam-class-python/issues).
+For questions or support, open an issue on the [GitHub repository](https://github.com/Amit4218/class_presentation_project.git/issues).
